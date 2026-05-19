@@ -1,0 +1,142 @@
+body{
+    background-color: lightblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+header, main, footer{
+    border-style: none;
+}
+header{
+    border-style: outset;
+    background-color:lightslategrey;
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 40px;
+    padding: 10px;
+    padding-top: 0;
+    margin: 0;
+}
+nav{
+    border-style: outset;
+    width: 180px;
+    height: 100%;
+    position: fixed;
+}
+main{
+    display: grid;
+    grid-template-columns: 44% 23% 30%;
+    Column-gap: 1%;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-left: 180px;
+}
+article{
+    border-style: outset;
+    padding: 20px;
+    padding-top: 10px;
+}
+aside{
+    border-style: outset;
+    padding: 30px;
+    padding-top: 20px;
+}
+footer{
+    color: grey;
+    border-style: outset;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-left: 195px;
+    margin-right: 1%;
+}
+img{
+    height: 60%;
+    width: 60%;
+}
+.aside img{
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+}
+table{
+    width: 100%;
+    margin-top: 10px;
+}
+th, td{
+    font-size: 16px;
+    padding: 8px;
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+p{
+    font-size: 14px;
+    margin-top: 0;
+}
+.footer p{
+    font-family:monospace;
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    animation-name: FooterAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes FooterAnimation {
+    0%   {left:0px; top:0px;}
+    20%   {left:0px; top:0px;}
+    40%  {left:10px; top:0px;}
+    60%  {left:0px; top:00px;}
+    80%  {left:10px; top:00px;}
+    100% {left:0px; top:0px;}
+}
+.aside p{
+    margin-bottom: 5px;
+}
+.nav ul{
+    background-color: slategrey;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    position: fixed;
+    height: 100%;
+}
+.aside ul{
+    margin-top: 0;
+}
+li{
+    font-size: 14px;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 8px 10px;
+    margin: 0;
+}
+li a.active{
+    font-size: larger;
+    font-style: italic;
+    color: cyan;
+    padding-left: 14px;
+}
+.nav li a:hover{
+    background-color:cyan;
+    color: white;
+    animation-name: HoverAnimation;
+    animation-duration: 1s;
+}
+@keyframes HoverAnimation{
+    from {background-color: slategrey;}
+    to {background-color: cyan;}
+}
